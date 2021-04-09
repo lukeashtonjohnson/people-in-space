@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who is in space?</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: "Lexend Deca", sans-serif; background: #e2e1e0; }
+    .container { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    section {
+      position: relative;
+      background: #fff;
+      max-width: 800px;
+      padding: 1em;
+      margin-bottom: 1em;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+    section:hover { box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    img { box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    span { position: absolute;top: 1em;right: 1em;background: rgb(95, 99, 104);color: #fff;padding: 1em; }
+    h3 { color: rgb(128, 134, 139); }
+    p { color: rgb(95, 99, 104); }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Who is in space?</h1>
+    </header>
+    <main>
+      <button>View all the people in space</button>
+      <div class="people-in-space"></div>
+    </main>
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
